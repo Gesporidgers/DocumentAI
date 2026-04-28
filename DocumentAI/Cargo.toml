@@ -1,0 +1,9 @@
+[package]
+name = "DocumentAI"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gtk = { version = "0.11.2", package = "gtk4" }
+ollama-rs = "0.3.2"
+relm4 = "0.11.0"
