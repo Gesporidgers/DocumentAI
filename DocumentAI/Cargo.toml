@@ -1,9 +1,11 @@
 [package]
 name = "DocumentAI"
-version = "0.1.0"
+version = "0.1.3"
 edition = "2024"
 
 [dependencies]
 gtk = { version = "0.11.2", package = "gtk4" }
+lopdf = "0.40.0"
 ollama-rs = "0.3.2"
 relm4 = "0.11.0"
+rustring_builder = "0.2.0"

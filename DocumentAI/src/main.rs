@@ -1,5 +1,6 @@
 #![windows_subsystem = "windows"]
 mod aiwork;
+mod pdfread;
 use relm4::{gtk, ComponentParts, ComponentSender, RelmApp, RelmWidgetExt, SimpleComponent};
 use gtk::prelude::{BoxExt, ButtonExt, GtkWindowExt, OrientableExt, WidgetExt};
 const APPID: &str = "ru.teovr.documentai";
@@ -86,8 +87,12 @@ impl SimpleComponent for VM {
 
     fn update(&mut self, message: Self::Input, sender: ComponentSender<Self>) {
         match message {
-            AppMsg::OpenFile1 => {}
-            AppMsg::OpenFile2 => {}
+            AppMsg::OpenFile1 => {
+
+            }
+            AppMsg::OpenFile2 => {
+
+            }
             AppMsg::Analyze => { 
                 self.output_text = "<i>Загрузка...</i>".to_string();
                 let file1 = self.file1.clone();
