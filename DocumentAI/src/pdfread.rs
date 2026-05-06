@@ -7,7 +7,7 @@ pub fn read_all_pdf(path: &str) -> String {
         Ok(doc)=>{
             let pages = doc.get_pages();
             for (i, _) in pages.iter().enumerate(){
-                let text = doc.extract_text(&[i.try_into().unwrap()]);
+                let text = doc.extract_text(&[(i+1).try_into().unwrap()]);
                 sb.append(text.unwrap_or_default());
             }
         }
